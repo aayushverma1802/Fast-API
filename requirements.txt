@@ -1,0 +1,3 @@
+fastapi[standard]
+pandas
+scikit-learn>=1.0

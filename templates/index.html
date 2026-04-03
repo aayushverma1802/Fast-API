@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Iris AI Predictor</title>
+    <!-- Linking the CSS file from the static folder -->
+    <link rel="stylesheet" href="{{ url_for('static', path='style.css') }}">
+</head>
+<body>
+    <div class="glass-card">
+        <h2>Iris Predictor</h2>
+        <div class="form-container">
+            <input type="number" id="sl" step="0.1" placeholder="Sepal Length">
+            <input type="number" id="sw" step="0.1" placeholder="Sepal Width">
+            <input type="number" id="pl" step="0.1" placeholder="Petal Length">
+            <input type="number" id="pw" step="0.1" placeholder="Petal Width">
+            <button id="predictBtn">Predict Now</button>
+        </div>
+        <div id="result">Result: --</div>
+    </div>
+
+    <!-- Linking the JS file from the static folder -->
+    <script src="{{ url_for('static', path='script.js') }}"></script>
+</body>
+</html>
